@@ -43,9 +43,9 @@ ActiveRecord::Schema.define(version: 2019_07_14_061950) do
     t.string "title", null: false
     t.text "body", null: false
     t.bigint "category_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "user_id"
     t.index ["category_id"], name: "index_posts_on_category_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
